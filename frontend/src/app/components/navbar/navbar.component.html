@@ -1,1 +1,11 @@
-<p>navbar works!</p>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link" [ngClass]="{'current-tab': currentTab == 'wastemap'}" routerLink="/wastemap">Waste Map</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [ngClass]="{'current-tab': currentTab == 'about'}" routerLink="/about">About</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Coming Soon</a>
+    </li>
+</ul>
