@@ -1,14 +1,38 @@
+.navigation-bar {
+  background-color: #ff9035;
+  padding: 1em;
+}
+.nav-link {
+  color: white;
+}
+
+.nav-item :hover {
+  border-bottom: 3px solid white;
+  border-bottom-left-radius: 0em;
+  border-bottom-right-radius: 0em;
+  opacity: 1;
+  transition: border-width 0.15s linear;
+}
+
+.nav-item {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
 .current-tab {
-    background-color: orange;
+  background-color: #fca259;
 }
 
 .navbar-info {
-    position: relative;
-    float: right;
+  position: relative;
+  float: right;
 }
 
 .website-title {
-    display: inline-block;
-    font-weight: 600;
-    font-size: 24px;
+  color: white;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 28px;
+  cursor: pointer;
+  outline: none;
 }
