@@ -1,5 +1,7 @@
+@import "../../../styles.scss";
+
 .navigation-bar {
-  background-color: #ff9035;
+  background-color: $primary-color;
   padding: 1em;
 }
 .nav-link {
@@ -20,7 +22,7 @@
 }
 
 .current-tab {
-  background-color: #fca259;
+  background-color: $primary-color-light;
 }
 
 .navbar-info {
