@@ -38,3 +38,26 @@
   cursor: pointer;
   outline: none;
 }
+
+.btn-group {
+  position: relative;
+  float: right;
+}
+
+.dropdown-button-color {
+    background-color: $primary-color-light;
+    color: white;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 610px) {
+  .navbar-info {
+    display: none;
+  }
+}
+
+@media (min-width: 610px) {
+  .btn-group {
+    display: none;
+  }
+}
