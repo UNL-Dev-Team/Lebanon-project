@@ -1,17 +1,19 @@
-<div class="website-title">
-    Lebanon Project
-</div>
-<div class="navbar-info">
-    <ul class="nav nav-pills">
-        <li class="nav-item">
-            <a class="nav-link" [ngClass]="{'current-tab': currentTab == 'wastemap'}" routerLink="/wastemap">Waste
-                Map</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" [ngClass]="{'current-tab': currentTab == 'about'}" routerLink="/about">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#">Coming Soon</a>
-        </li>
-    </ul>
+<div class="navigation-bar">
+    <div class="website-title" routerLink="/home">
+        Lebanon Project
+    </div>
+    <div class="navbar-info">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" [ngClass]="{'current-tab': currentTab == 'wastemap'}" routerLink="/wastemap">Waste
+                    Map</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [ngClass]="{'current-tab': currentTab == 'about'}" routerLink="/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Coming Soon</a>
+            </li>
+        </ul>
+    </div>
 </div>
