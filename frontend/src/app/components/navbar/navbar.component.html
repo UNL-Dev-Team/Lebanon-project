@@ -1,1 +1,29 @@
-<p>navbar works!</p>
+<div class="navigation-bar">
+    <div class="website-title" routerLink="/home">
+        Lebanon Project
+    </div>
+    <div class="navbar-info">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" [ngClass]="{'current-tab': currentTab == 'wastemap'}" routerLink="/wastemap">Waste
+                    Map</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [ngClass]="{'current-tab': currentTab == 'about'}" routerLink="/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Coming Soon</a>
+            </li>
+        </ul>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn dropdown-toggle dropdown-button-color" data-toggle="dropdown"
+            data-display="static" aria-haspopup="true" aria-expanded="false">
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" type="button" routerLink="/wastemap">Map</button>
+            <button class="dropdown-item" type="button" routerLink="/about">About</button>
+            <button class="dropdown-item" type="button">Coming Soon</button>
+        </div>
+    </div>
+</div>
