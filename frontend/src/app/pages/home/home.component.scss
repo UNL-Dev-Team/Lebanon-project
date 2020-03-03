@@ -1,0 +1,17 @@
+#title-block {
+    text-align: center;
+    padding: 50px;
+}
+
+#title-block h1 {
+    font-size: 5.5em;
+}
+
+#title-block h2 {
+    font-size: 2em;
+}
+
+#menu-grid {
+    display: inline-grid;
+    grid-template-columns: 3;
+}
