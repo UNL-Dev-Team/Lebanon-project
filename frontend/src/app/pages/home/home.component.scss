@@ -12,6 +12,29 @@
 }
 
 #menu-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    justify-content: center;
     display: inline-grid;
-    grid-template-columns: 3;
+    text-align: center;
+    margin: 0em auto;
+}
+
+.menu-item {
+    padding: 50px;
+    border: 1px solid black;
+    justify-content: center;
+}
+
+#menu-item-icon {
+    font-size: 5em;
+}
+
+#menu-item-title {
+    font-size: 4em;
+}
+
+#menu-time-description {
+    font-size: 1.5em;
 }
