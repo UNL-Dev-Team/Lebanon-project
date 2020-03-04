@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationStart } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -17,13 +17,17 @@ export class NavbarComponent implements OnInit {
   }
 
   activeTab(): void {
-    let url = this.router.url;
-    if (url.includes("home")) {
-      this.currentTab = "home";
-    } else if (url.includes("wastemap")) {
-      this.currentTab = "wastemap";
-    } else {
-      this.currentTab = "about";
-    }
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        let url = event.url;
+        if (url.includes("home")) {
+          this.currentTab = "home";
+        } else if (url.includes("wastemap")) {
+          this.currentTab = "wastemap";
+        } else {
+          this.currentTab = "about";
+        }
+      }
+    });
   }
 }
