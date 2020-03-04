@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkedAlt, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -8,7 +8,8 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  faCoffee = faCoffee;
+  faMapMarkedAlt = faMapMarkedAlt;
+  faQuestionCircle = faQuestionCircle;
 
   constructor() { }
 
