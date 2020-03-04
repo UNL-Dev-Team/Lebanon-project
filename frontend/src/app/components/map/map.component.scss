@@ -1,0 +1,15 @@
+@import "~leaflet/dist/leaflet.css";
+
+.map-container {
+    width: 900px;
+    height: 600px;
+}
+
+.map-frame {
+    // border: 1px solid black;
+    height: 100%;
+}
+
+#map {
+    height: 100%;
+}

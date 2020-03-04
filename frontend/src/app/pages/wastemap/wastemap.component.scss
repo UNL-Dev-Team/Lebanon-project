@@ -1,3 +1,23 @@
 * {
-    border: 1px solid red;
+    // border: 1px solid red;
+}
+
+#item-list {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". .";
+    margin-top: 30px;
+}
+  
+@media all and (-ms-high-contrast:none) {
+    .container {
+        display: -ms-grid;
+        -ms-grid-columns: 0.6fr 1.4fr;
+        -ms-grid-rows: 1fr;
+    }
 }
