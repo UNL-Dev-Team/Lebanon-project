@@ -1,5 +1,7 @@
+@import "../../../styles.scss";
+
 .underline {
-    border-bottom: 5px solid orange;
+    border-bottom: 5px solid $primary-color;
 }
 
 #title-block {
@@ -21,8 +23,6 @@
 #menu-grid {
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-evenly;
-    justify-content: center;
     display: inline-grid;
     text-align: center;
 }
