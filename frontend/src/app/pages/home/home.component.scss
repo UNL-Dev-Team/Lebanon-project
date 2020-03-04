@@ -6,7 +6,7 @@
 
 #title-block {
     text-align: center;
-    padding: 50px;
+    padding: 30px;
 }
 
 #title-block h1 {
@@ -24,7 +24,6 @@
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     display: inline-grid;
-    text-align: center;
 }
 
 .menu-item {
@@ -32,13 +31,16 @@
 }
 
 #menu-item-icon {
+    text-align: center;
     font-size: 5em;
 }
 
 #menu-item-title {
+    text-align: center;
     font-size: 4em;
 }
 
-#menu-time-description {
-    font-size: 1.5em;
+#menu-item-description {
+    font-size: 1em;
+    text-align: justify;
 }
