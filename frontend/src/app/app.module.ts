@@ -11,6 +11,8 @@ import { MapComponent } from './components/map/map.component';
 import { MapFilterComponent } from './components/map-filter/map-filter.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule,    
   ],
   providers: [],
   bootstrap: [AppComponent]
